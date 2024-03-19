@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - My Shop | Home</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="shop-wrap">        
+        <!-- Toast-Poup -->
+        <div class="toast"></div>
+        <!-- Header -->
+        <header class="header">
+            <!-- Navbar -->
+            <div class="header-navbar__wrap hide-on-device">
+                <div class="grid wide">                    
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__items nav-separate">
+                                <a href="#" class="header-nav__links">Khuyến mãi</a>
+                            </li>
+                            <li class="header-nav__items nav-separate">
+                                <a href="#" class="header-nav__links">Góp ý</a>
+                            </li>
+                            <li class="header-nav__items nav-open-qr nav-separate">
+                                <a href="javascript:void(0);" class="header-nav__links">Tải ứng dụng</a>
+                                <!-- QR-Code -->
+                                <div class="nav-qr">
+                                    <img class="nav-qr__img" src="./assets/img/ui/qr-code-img.png" alt="QR-code-Apps">
+                                    <div class="nav-qr__app">
+                                        <a href="#" class="nav-qr__links">
+                                            <img class="nav-app__img" src="./assets/img/ui/google-play.png" alt="GooglePlay Image">
+                                        </a>
+                                        <a href="#" class="nav-qr__links">
+                                            <img class="nav-app__img" src="./assets/img/ui/app-store.png" alt="Apple Store Image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-nav__items">
+                                <span class="nav__no-pointer">Kết nối</span>
+                            </li>
+                            <li class="header-nav__items">
+                                <a href="#" class="header-nav__links">
+                                    <i class="header-nav__icon fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="header-nav__links">
+                                    <i class="header-nav__icon fa-brands fa-instagram"></i>
+                                </a>                                
+                            </li>
+                        </ul>
+                        <ul class="header-nav__list">                            
+                            <li class="header-nav__items nav-open-notify">
+                                <a href="javascript:void(0);" class="header-nav__links">
+                                    <i class="header-nav__icon fa-regular fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <!-- Notify -->
+                                <div class="nav-notify">
+                                    <header class="nav-notify__heading">
+                                        <h2>Thông báo mới nhận</h2>
+                                    </header>
+                                    <div class="nav-notify__empty">
+                                        <img class="nav-notify__img" src="./assets/img/ui/group-icon.png" alt="Notify User">
+                                        <h3>Đăng nhập để xem thông báo</h3>
+                                    </div>
+                                    <footer class="nav-notify__footer--btn">
+                                        <a href="./register.html" class="nav-notify__btn">Đăng ký</a>
+                                        <a href="./login.html" class="nav-notify__btn">Đăng nhập</a>
+                                    </footer>                                    
+                                </div>
+                            </li>
+                            <li class="header-nav__items">
+                                <a href="#" class="header-nav__links">
+                                    <i class="header-nav__icon fa-regular fa-circle-question"></i>
+                                    Hỗ trợ
+                                </a>
+                            </li>                            
+                            <li class="header-nav__items nav-separate">
+                                <a href="./register.html" class="header-nav__links">Đăng ký</a>
+                            </li>
+                            <li class="header-nav__items">
+                                <a href="./login.html" class="header-nav__links">Đăng nhập</a>                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Logobar -->
+            <div class="header-logobar__wrap">
+                <div class="grid wide">
+                    <div class="header-logobar">
+                        <!-- Device-Navbar -->
+                        <label for="device-nav-checkbox" class="header-device__nav">
+                            <i class="header-device__icon fa-solid fa-bars"></i>
+                        </label>
+                        <!-- Device-Search -->
+                        <label for="device-search-checkbox" class="header-device__search hide-on-tablet">
+                            <i class="header-device__icon fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <!-- Logo -->
+                        <div class="header-logo hide-on-tablet">
+                            <a href="./index.html" class="header-logo__link">
+                                <svg class="header-logo__img" viewBox="0 0 931.5 629.6">
+                                    <g fill-rule="evenodd">
+                                        <path fill="#fff" d="M522.1,215.8c-41.1,0-61.6,13.9-78,25.1l-0.5,0.3c-1.8,1.2-2.3,3.6-1.2,5.4l17,29.1c0.8,1.8,2.9,2.6,4.7,1.9
+                                            c0.6-0.2,1.1-0.4,1.6-0.8l1.3-1c8.5-7.1,21.3-17.8,54.1-20.4c18.3-1.5,34.1,3.4,45.6,14.1c12.8,11.8,20.5,30.8,20.5,50.8
+                                            c0,36.8-21.8,60-56.9,60.5c-28.9-0.1-48.3-15.1-48.3-37.3c0-11.7,4.6-20.4,15.1-28c1.7-1,2.3-3.2,1.3-5c0-0.1-0.1-0.1-0.1-0.2
+                                            l-14.6-27.5c-0.7-1.6-2.5-2.5-4.2-2.1c-0.6,0.1-1.1,0.2-1.6,0.5c-16.4,9.7-35.7,28.3-34.6,62.4c1.3,43.3,37.5,76.3,84.4,77.7h5.4
+                                            c55.8-1.8,96.1-43.1,96.1-98.9C629.1,270.6,591.6,215.8,522.1,215.8L522.1,215.8z M745.5,363.8c-25.3,0-45.5-21-45.5-46.6
+                                            s20.1-46.4,45.5-46.4s45.6,20.8,45.6,46.4S770.9,363.8,745.5,363.8z M697.2,251.2v-24c0.1-0.8-0.5-1.6-1.3-1.8c-0.2,0-0.3,0-0.5,0
+                                            h-41.1c-0.9-0.1-1.6,0.5-1.8,1.3c0,0.2,0,0.3,0,0.5v235c-0.1,0.7,0.4,1.4,1.1,1.6c0.2,0.1,0.4,0.1,0.7,0.1h44.1
+                                            c0.9,0.1,1.7-0.5,1.8-1.3c0-0.1,0-0.3,0-0.4v-77.2h0.7c7,10.6,26.1,23.4,51.1,23.4c47,0,86.1-38.8,86.1-91.3
+                                            c0-50.3-38.9-91.1-88.4-91.1c-22,0-40.5,12.2-52.4,26.8L697.2,251.2L697.2,251.2z M193.6,301.9c0,0-21.3-5-29.2-7
+                                            s-21.6-6.4-21.6-16.6c0-10.6,11-13.6,22.3-13.6s23.7,2.7,24.7,15.1c0,0.9,0.7,1.6,1.6,1.6c0.1,0,0.1,0,0.2,0l41.3-0.1
+                                            c0.9,0.1,1.7-0.5,1.8-1.3c0-0.2,0-0.4,0-0.5c-2.6-39.7-37.5-53.9-69.8-53.9c-38.3,0-66.2,25.1-66.2,52.9c0,20.2,5.8,39.2,50.9,52.4
+                                            c7.9,2.3,18.7,5.3,28.1,7.8c11.3,3.1,17.3,7.8,17.3,15.4c0,8.7-12.8,14.7-25,14.7c-18,0-30.7-6.6-31.8-18.5c0-0.9-0.7-1.6-1.6-1.6
+                                            c-0.1,0-0.1,0-0.2,0l-41.2,0.2c-0.9-0.1-1.7,0.4-1.8,1.3c0,0.2,0,0.4,0,0.6c1.9,37.5,38.2,57.7,72.1,57.7
+                                            c50.4,0,73.3-28.4,73.3-54.8C238.9,341.1,236.1,312.7,193.6,301.9L193.6,301.9z M261,167.5v239.1c-0.1,0.9,0.5,1.7,1.3,1.8
+                                            c0.2,0,0.3,0,0.5,0h44.1c0.9,0.1,1.7-0.5,1.8-1.3c0-0.2,0-0.3,0-0.5V304.6c0-19.7,13.2-33.8,34.5-33.8c23.3,0,29.1,19,29.1,38.4
+                                            v97.3c-0.1,0.9,0.5,1.7,1.3,1.8c0.2,0,0.3,0,0.5,0h43.9c0.9,0.1,1.7-0.5,1.8-1.3c0-0.2,0-0.3,0-0.5V303.4c0-3.5-0.1-7-0.4-10.4
+                                            c-0.8-11-3.5-21.8-8.2-31.9c-10.2-21.2-29.5-35-58.5-35c-18.1,0.3-35,8.9-45.8,23.4l-1.1,1.3v-83.3c0.1-0.9-0.5-1.7-1.3-1.8
+                                            c-0.2,0-0.3,0-0.5,0h-41.1c-0.9-0.1-1.7,0.5-1.8,1.4C261,167.2,261,167.3,261,167.5L261,167.5z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <input type="checkbox" hidden id="device-search-checkbox" class="device-search__checkbox">
+                        <!-- Search -->
+                        <div class="header-search">
+                            <div class="header-search__wrap">
+                                <input type="text" class="header-search__box" placeholder="Nhập từ khoá, sản phẩm, thương hiệu cần tìm">
+                                <!-- Search-History -->
+                                <div class="search-history">
+                                    <h3 class="search-history__heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="search-history__list">
+                                        <li class="search-history__items">
+                                            <a href="#" class="search-history__links">Vga GT 1030 2gb ddr5</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </div>                            
+                            <div class="header-search__select">
+                                <span class="header-search__label">Trong Shop</span>
+                                <i class="header-search__icon fa-solid fa-chevron-down"></i>
+                                <!-- Search-Option -->
+                                <ul class="search-option">
+                                    <li class="search-option__items search-option__active">
+                                        <span>Trong Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="search-option__items">
+                                        <span>Ngoài Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header-search__btn">
+                                <i class="header-search__btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Cart -->
+                        <div class="header-cart">
+                            <div class="header-cart__wrap">                                
+                                <i class="header-cart__icon fa-solid fa-cart-shopping"></i>                            
+                                <!-- Cart-List -->
+                                <div class="cart-list">
+                                    <header class="cart-list__heading">
+                                        <h2>Sản phẩm đã thêm</h2>
+                                    </header>
+                                    <div class="cart-list__empty">
+                                        <img class="cart-list__img" src="./assets/img/ui/empty-cart.png" alt="Cart Empty">
+                                        <h3 class="cart-list__text">Chưa có sản phẩm nào trong giỏ hàng của bạn</h3>
+                                    </div> 
+                                    <div class="cart-list__footer">                                        
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Device-Sortbar -->
+            <ul class="header-device__sortbar">
+                <li class="header-device__sort-items">
+                    <a href="#" class="header-device__sort-links">Liên quan</a>
+                </li>
+                <li class="header-device__sort-items header-device__sort-active">
+                    <a href="#" class="header-device__sort-links">Mới nhất</a>
+                </li>
+                <li class="header-device__sort-items">
+                    <a href="#" class="header-device__sort-links">Bán chạy</a>
+                </li>
+                <li class="header-device__sort-items">
+                    <a href="#" class="header-device__sort-links">Giá</a>
+                </li>
+            </ul>
+            <!-- Device-Menu -->
+            <div class="device-nav">
+                <input type="checkbox" hidden id="device-nav-checkbox" class="device-nav__checkbox">
+                <label for="device-nav-checkbox" class="device-nav__overlay"></label>
+                <div class="device-nav__form">
+                    <div class="device-nav__wrap">
+                        <ul class="device-nav__list">
+                            <li class="device-nav__items">                                
+                                <i class="fa-solid fa-circle-user"></i>                                
+                                <a href="#">Tài khoản của tôi</a>
+                            </li>
+                            <li class="device-nav__items">
+                                <i class="fa-solid fa-house"></i>
+                                <a href="./index.html">Trang chủ</a>
+                            </li>
+                        </ul>
+                        <ul class="device-nav__list">
+                            <li class="device-nav__items">  
+                                <i class="fa-solid fa-right-to-bracket"></i>                              
+                                <a href="#">Điện thoại & Phụ kiện</a>
+                            </li>
+                            <li class="device-nav__items">  
+                                <i class="fa-solid fa-right-to-bracket"></i>                              
+                                <a href="#">Máy tính & Laptop</a>
+                            </li>
+                            <li class="device-nav__items">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                <a href="#">Thiết bị điện tử</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <label for="device-nav-checkbox" class="device-nav__close-btn">
+                        <svg viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <!-- Content -->
+        <main class="content">
+            <div class="grid wide">
+                <div class="content-wrap">
+                    <!-- Slider -->
+                    <div class="slider hide-on-device">
+                        <div class="row sm-gutter">                        
+                            <div class="col l-8">                                
+                                <div class="slider-left">                                
+                                    <div id="slide-list" class="slider-list">
+                                    </div>                                          
+                                    <div class="slide-btn">
+                                        <span class="slide-dot active"></span>
+                                        <span class="slide-dot"></span>
+                                        <span class="slide-dot"></span>
+                                    </div>
+                                </div>                            
+                            </div>                        
+                            <div class="col l-4">
+                                <div id="slide-banner" class="slider-right">                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category -->
+                    <div class="category hide-on-device">
+                        <div class="row sm-gutter"> 
+                            <div class="col l-12">
+                                <h2 class="category-heading">Danh mục</h2>
+                                <ul class="category-list">
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/phone-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Điện thoại</div>
+                                        </a>
+                                    </li>
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/laptop-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Laptop</div>                                
+                                        </a>
+                                    </li>
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/table-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Máy tính bảng</div>
+                                        </a>
+                                    </li>
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/tivi-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Tivi</div>
+                                        </a>
+                                    </li>
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/screen-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Màn hình</div>
+                                        </a>
+                                    </li>
+                                    <li class="category-items">
+                                        <a href="#" class="category-links">
+                                            <img src="./assets/img/category/pc-icon.webp" alt="" class="category-icon">
+                                            <div class="category-name">Máy tính PC</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>                       
+                        </div>
+                    </div>
+                    <!-- Device-Category -->  
+                    <nav class="device-category show-on-device">
+                        <ul class="device-category__list">
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Máy tính & Laptop</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Điện thoại & Phụ kiện</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Thiết bị điện tử</span>
+                                </a>
+                            </li>                            
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Máy tính bảng</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Màn hình</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Tivi</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Loa</span>
+                                </a>
+                            </li>
+                            <li class="device-category__items">
+                                <a href="#" class="device-category__links">
+                                    <span>Máy in</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Product -->
+                    <div class="product">                        
+                        <h1 class="product__heading">Khuyến mãi Hot</h1>
+                        <div class="product-list">
+                            <div id="product-sale" class="row sm-gutter">                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banner --> 
+                    <div id="banner-1">                        
+                    </div>                 
+                    <!-- Product-2 -->
+                    <div class="product">                        
+                        <h1 class="product__heading-2">Điện thoại</h1>
+                        <div class="product-list">
+                            <div id="product-phone" class="row sm-gutter">                                
+                            </div>
+                            <div class="row sm-gutter">
+                                <div class="product-view">
+                                    <a href="#" class="product-view__link">
+                                        <span class="btn btn--primary">Xem thêm ></span>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- Banner -->
+                    <div id="banner-2">                        
+                    </div>                 
+                    <!-- Product-3 -->
+                    <div class="product">                        
+                        <h1 class="product__heading-2">Laptop</h1>
+                        <div class="product-list">
+                            <div id="product-laptop" class="row sm-gutter">                                
+                            </div>
+                            <div class="row sm-gutter">
+                                <div class="product-view">
+                                    <a href="#" class="product-view__link">
+                                        <span class="btn btn--primary">Xem thêm ></span>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">Thanh Toán</h3>
+                        <div class="footer-list">
+                            <ul class="footer-items">
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-01-img.png" alt="" class="footer-item__pay-icon">
+                                </li>
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-02-img.png" alt="" class="footer-item__pay-icon">
+                                </li> 
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-03-img.png" alt="" class="footer-item__pay-icon">
+                                </li>
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-04-img.png" alt="" class="footer-item__pay-icon">
+                                </li>
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-05-img.png" alt="" class="footer-item__pay-icon">
+                                </li>
+                                <li class="footer-items__pay">
+                                    <img src="./assets/img/pay/pay-06-img.png" alt="" class="footer-item__pay-icon">
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">Danh mục nổi bật</h3>
+                        <ul class="footer-list">
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Máy Tính & Laptop</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Thiết bị điện tử</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">Điện thoại & Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-square-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12">
+                        <h3 class="footer-heading">Vào cửa hàng trên Ứng dụng</h3>
+                        <div class="footer-dowload">
+                            <img src="./assets/img/ui/qr-code-img.png" alt="QR-Code App" class="footer-dowload__qr">
+                            <div class="footer-dowload__apps">
+                                <a href="#" class="footer-dowload__apps-link">
+                                    <img src="./assets/img/ui/google-play.png" alt="Google Play" class="footer-dowload__img">
+                                </a>
+                                <a href="#" class="footer-dowload__apps-link">
+                                    <img src="./assets/img/ui/app-store.png" alt="App Store" class="footer-dowload__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+    </div>
+    <script src="/assets/js/db.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>        
+        handledEvents();
+    </script>   
+</body>
+</html>
