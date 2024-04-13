@@ -41,10 +41,10 @@ function handledEvents() {
         });
     });
     
-    //Search-Btn
+    //Search-Btn 
     searchBtn.onclick = function() {
         showToast();
-    }; 
+    }
 
     //Slider-Auto
     const autoSlider = setInterval(autoSlide, 3000);
@@ -56,7 +56,7 @@ function handledEvents() {
             slideIndex = index;
             showSlide(slideIndex);
         }
-    });
+    });    
 }
 
 //Toast
